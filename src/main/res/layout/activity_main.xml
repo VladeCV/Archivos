@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fontFamily="@font/electrolize"
+            android:text="@string/productos"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/electrolize"
+            android:text="CODPRO"
+            android:textAlignment="center"
+            android:textColor="#020202" />
+
+        <EditText
+            android:id="@+id/cod"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/electrolize"
+            android:inputType="number"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#020202" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/electrolize"
+            android:onClick="buscar"
+            android:text="BUSCAR" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="339dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tipotext"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/electrolize"
+                android:text="TIPO:"
+                android:textAlignment="center"
+                android:textColor="#020202" />
+
+            <EditText
+                android:id="@+id/tipo"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/electrolize"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="#020202"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/electrolize"
+                android:text="DES:"
+                android:textAlignment="center"
+                android:textColor="#020202" />
+
+            <EditText
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/electrolize"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="#020202"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/electrolize"
+                android:text="UND:"
+                android:textAlignment="center"
+                android:textColor="#020202" />
+
+            <EditText
+                android:id="@+id/und"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/electrolize"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="#020202"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/electrolize"
+                android:text="UXE:"
+                android:textAlignment="center"
+                android:textColor="#020202" />
+
+            <EditText
+                android:id="@+id/uxe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/electrolize"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="#020202"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/existencia"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/electrolize"
+                android:text="EXIS:"
+                android:textAlignment="center"
+                android:textColor="#020202" />
+
+            <EditText
+                android:id="@+id/exis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/electrolize"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="#020202"
+                android:textSize="12sp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/electrolize"
+            android:onClick="limpiar"
+            android:text="LIMPIAR" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="390dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/electrolize"
+                android:text="Hello World!"
+                android:textColor="#020202"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.112" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
